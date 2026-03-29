@@ -32,9 +32,9 @@ Color generateRandomColor() {
   // 0-7 - blue value
   // The code below shifts each value into its required position
 
-  final int alphaValue = pow(opaqueAlpha, 24).toInt();
-  final int redValue = pow(randomRed, 16).toInt();
-  final int greenValue = pow(randomGreen, 8).toInt();
+  final int alphaValue = opaqueAlpha * pow(2, 24).toInt();
+  final int redValue = randomRed * pow(2, 16).toInt();
+  final int greenValue = randomGreen * pow(2, 8).toInt();
   final int blueValue = randomBlue;
 
   return Color(alphaValue + redValue + greenValue + blueValue);

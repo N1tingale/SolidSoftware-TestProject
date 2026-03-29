@@ -54,7 +54,10 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Column(
             mainAxisAlignment: .center,
             children: [
-              Text('Hello there', style: TextStyle(fontSize: 18)),
+              Text(
+                'Hello there',
+                style: TextStyle(fontSize: greetingMessageFontSize),
+              ),
             ],
           ),
         ),
