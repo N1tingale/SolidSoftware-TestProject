@@ -1,26 +1,33 @@
 import 'package:flutter/material.dart';
+import 'package:solidsoftware_testproject/constants.dart';
 import 'package:solidsoftware_testproject/utils.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const Main());
 }
 
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+/// Entry point of the application
+class Main extends StatelessWidget {
+  /// Initializes the class
+  const Main({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'Flutter Demo',
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      title: 'Solid Software Flutter Test Application',
+      home: MyHomePage(
+        title: 'Solid Software Flutter Test Application Home Page',
+      ),
     );
   }
 }
 
+/// The HomePage class
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+  /// Initializes the class
+  const MyHomePage({required this.title, super.key});
 
+  /// The title of the application
   final String title;
 
   @override
